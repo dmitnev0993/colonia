@@ -95,7 +95,7 @@
 				}
 			});
 			$('#mask').show();
-			$.get('/query-residential', spRequest,function(msg){
+			$.post('/query-residential', spRequest,function(msg){
 				$("#dynamic").html(msg);
 				common();
 				ajaxElements();

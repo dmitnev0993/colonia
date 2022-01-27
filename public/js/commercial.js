@@ -96,7 +96,7 @@
 					}
 				});
 				$('#mask').show();
-				$.get('/query-commercial', spRequest, function(msg){
+				$.post('/query-commercial', spRequest, function(msg){
 					$("#dynamic").html(msg);
 					common();
 					ajaxElements();

@@ -63,7 +63,7 @@ Route::get('/commercial-strata', [
     'uses' => 'App\Http\Controllers\HomeController@commercial'
 ]);
 
-Route::get('/query-residential', [
+Route::post('/query-residential', [
     'uses' => 'App\Http\Controllers\PageController@queryResidential'
 ]);
 
@@ -75,6 +75,6 @@ Route::post('/search-suburb', [
     'uses' => 'App\Http\Controllers\PageController@searchSuburb'
 ]);
 
-Route::get('/query-commercial', [
+Route::post('/query-commercial', [
     'uses' => 'App\Http\Controllers\PageController@queryCommercial'
 ]);
